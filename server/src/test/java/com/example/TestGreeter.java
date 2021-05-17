@@ -34,7 +34,8 @@ public class TestGreeter {
   @Test
   public void test1()
   {
-	  boolean flag=true;
-	  assertTrue(flag);
+	  String someone = "World";
+
+	    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 }
